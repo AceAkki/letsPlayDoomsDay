@@ -1,0 +1,22 @@
+:root {
+    --clr-primary:#333333;
+    --clr-primary-light:#3f3f3f;
+    --clr-secondary:#e2e2e2;
+    
+    --clr-success:#000042;
+    --clr-success-rgb:rgba(0, 0, 66,0.5);
+    --clr-success-txt:#ffffff;
+    --clr-neutral:#FBCA03;
+    --clr-neutral-rgb:rgba(251, 202, 3, 0.5);
+    --clr-danger:#00643D;
+    --clr-danger-rgb:rgb(0, 100, 61,0.5);
+    --clr-danger-txt:#FFEC83;
+    --clr-danger-doom:#08BF7C;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
