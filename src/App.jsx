@@ -64,11 +64,12 @@ function App() {
     });
   }
 
+  function guessLetter(letter) {
+    console.log(letter)
+    if (isGameOver) return;
+    setGuessLetters((oldLetters) => [...oldLetters, letter]);
+  }
   function CreateKeyboard() {
-    function guessLetter(letter) {
-      if (isGameOver) return;
-      setGuessLetters((oldLetters) => [...oldLetters, letter]);
-    }
     function dynamicStyle(letter) {
       return clsx("letter-btn", {
         "correct-guess":
@@ -87,7 +88,6 @@ function App() {
           className={dynamicStyle(letter)}
           onClick={() => guessLetter(letter)}
         >
-          {" "}
           {letter}
         </button>
       );
@@ -112,7 +112,7 @@ function App() {
       width={width}
       height={height}
     /> : null}
-      <main>
+      <main onKeyPress={() => console.log(event)}>
         <Status
           ref={statusElemRef}
           wrongArr={wrongGuess}

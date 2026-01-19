@@ -121,8 +121,8 @@ main {
   font-size: 1.5rem;
   color: var(--clr-secondary);
   border-bottom: 3px solid var(--clr-secondary);
-  min-height: 3rem;
-  min-width: 3rem;
+  min-height: 2.9rem;
+  min-width: 2.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
